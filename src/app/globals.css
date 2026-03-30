@@ -1,18 +1,41 @@
 @import "tailwindcss";
 
 body {
-  background: #121212;  
+  background-color: var(--background);
 }
+:root {
+  --background: #121212;
+  --banner-intro: #707070; 
+}
+/* ! ==================== */
 .link {
-  color: #959595; 
-  font-size: 18px; 
-  font-weight: bold; 
+  color: #959595;
+  font-size: 18px;
+  font-weight: bold;
   transition: linear 0.3s;
 }
 .link:hover {
   color: #fd6f00;
-
 }
+/* banner section  */
+.intro {
+  color: var(--banner-intro);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 3%;
+}
+.name{
+  color:var(--banner-intro);
+  font-weight: bold;
+  font-size: 48px;
+  letter-spacing: 3%;
+}
+.desig{
+  
+}
+/* banner section  */
+
+
 
 /* :root {
   --background: #ffffff;
