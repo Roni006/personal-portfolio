@@ -19,9 +19,9 @@ const Banner = () => {
       <section className="pt-7.5 pb-37.5">
         <Container>
           <div className="flex items-center  justify-between gap-20">
-            <div className="leftSide w-[618px] relative">
+            <div className="leftSide w-154.5 relative">
               <div>
-                <Image className="absolute left-0 top-5 -z-[5]" src={bannerShape} alt="Banner Shape" />
+                <Image className="absolute left-0 top-5 -z-5" src={bannerShape} alt="Banner Shape" />
               </div>
               <span className="intro">Hi, Iam</span>
               <h6 className="name pt-3">Anik Islam</h6>

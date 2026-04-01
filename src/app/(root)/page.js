@@ -1,13 +1,14 @@
-import Banner from '@/Components/Banner'
-import React from 'react'
+import Banner from "@/Components/Banner";
+import Service from "@/Components/Service";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-      <Banner/>
-      {/* <h1>Home page</h1> */}
+      <Banner />
+      <Service />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
