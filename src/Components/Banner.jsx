@@ -5,25 +5,27 @@ import { FaInstagram } from "react-icons/fa6";
 import { CiLinkedin } from "react-icons/ci";
 import { PiBehanceLogoLight } from "react-icons/pi";
 import { AiOutlineDribbble } from "react-icons/ai";
+import Image from "next/image";
 
 
 // !image import
-import bannerShape from '../../src/img/banner-shape.png' 
-import Image from "next/image";
-
+import bannerShape from '../../src/img/banner-img/banner-shape.png'; 
+import circle from '../../src/img/banner-img/circle.png';
+// import hero from '../../src/img/banner-img/hero.png';
+import hero from '../../src/img/banner-img/hero-img.png';
 const Banner = () => {
   return (
     <>
-      <section>
+      <section className="pt-7.5 pb-37.5">
         <Container>
-          <div>
-            <div className="relative">
+          <div className="flex items-center  justify-between gap-20">
+            <div className="leftSide w-[618px] relative">
               <div>
-                <Image className="absolute left-0 top-5" src={bannerShape} alt="Banner Shape" />
+                <Image className="absolute left-0 top-5 -z-[5]" src={bannerShape} alt="Banner Shape" />
               </div>
               <span className="intro">Hi, Iam</span>
               <h6 className="name pt-3">Anik Islam</h6>
-              <h1 className="font-bold tracking-[3%] bg-linear-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent text-[70px] pt-4 pb-4.5 ">
+              <h1 className="font-bold tracking-[3%] bg-linear-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent text-[60px] pt-4 pb-4.5 ">
                 Front End Developer
               </h1>
 
@@ -85,7 +87,13 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-            <div></div>
+            <div clasName="rightSide w-[535px]">
+                <div className="relative">
+                  <Image className="absolute top-64.25 bottom-0 -z-99 " src={circle} alt="cirlce shape Image" />
+
+                  <Image className="z-999 w-full" src={hero} alt="Hero Image" />
+                </div>
+            </div>
           </div>
         </Container>
       </section>
