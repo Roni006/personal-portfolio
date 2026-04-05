@@ -3,6 +3,7 @@ import Banner from "@/Components/Banner";
 import Service from "@/Components/Service";
 import Progress from "@/Components/Progress";
 import React from "react";
+import Portfolio from "@/Components/Portfolio";
 
 const page = () => {
   return (
@@ -10,7 +11,8 @@ const page = () => {
       <Banner />
       <Service />
       <AboutMe />
-      <Progress/>
+      {/* <Progress/> */}
+      <Portfolio/>
     </div>
   );
 };

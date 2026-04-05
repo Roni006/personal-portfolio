@@ -86,7 +86,7 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-            <div clasName="rightSide w-[535px]">
+            <div className="rightSide w-[535px]">
                 <div className="relative">
                   <Image className="absolute top-64.25 bottom-0 -z-99 " src={circle} alt="cirlce shape Image" />
 
