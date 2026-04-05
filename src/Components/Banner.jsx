@@ -10,8 +10,7 @@ import Image from "next/image";
 
 // !image import
 import bannerShape from '../../src/img/banner-img/banner-shape.png'; 
-import circle from '../../src/img/banner-img/circle.png';
-// import hero from '../../src/img/banner-img/hero.png';
+import circle from '../../src/img/banner-img/circle.png'; 
 import hero from '../../src/img/banner-img/hero-img.png';
 const Banner = () => {
   return (
