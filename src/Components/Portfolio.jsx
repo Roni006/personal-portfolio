@@ -1,6 +1,10 @@
-"use client"; 
+"use client";
+import Image from "next/image";
 import Container from "./Container";
 import { useState } from "react";
+
+// ! image importting
+import portflio1 from "../../src/img/portfolio/portfolio1.png";
 
 const Portfolio = () => {
   const [isActive, setIsActive] = useState(1);
@@ -19,53 +23,65 @@ const Portfolio = () => {
             {/* tabs  */}
             <div>
               <ul className="flex items-center justify-center gap-6">
-                
                 <li
                   className={`${
                     isActive === 1 && "bg-[#e76500] text-[#ffffff]"
                   } py-3.5 px-10 bg-[#252525] text-[#c6c6c6] text-[16px] font-bold tracking-[3%] rounded-md transition duration-300 cursor-pointer`}
                   onClick={() => setIsActive(1)}
-                > 
-                 All
+                >
+                  All
                 </li>
-                
+
                 <li
                   className={`${
                     isActive === 2 && "bg-[#e76500] text-[#ffffff]"
                   } py-3.5 px-10 bg-[#252525] text-[#c6c6c6] text-[16px] font-bold tracking-[3%] rounded-md transition duration-300 cursor-pointer`}
                   onClick={() => setIsActive(2)}
-                > 
+                >
                   Website Design
                 </li>
-                
+
                 <li
                   className={`${
                     isActive === 3 && "bg-[#e76500] text-[#ffffff]"
                   } py-3.5 px-10 bg-[#252525] text-[#c6c6c6] text-[16px] font-bold tracking-[3%] rounded-md transition duration-300 cursor-pointer`}
                   onClick={() => setIsActive(3)}
-                > 
+                >
                   Mobile App Design
                 </li>
-                
+
                 <li
                   className={`${
                     isActive === 4 && "bg-[#e76500] text-[#ffffff]"
                   } py-3.5 px-10 bg-[#252525] text-[#c6c6c6] text-[16px] font-bold tracking-[3%] rounded-md transition duration-300 cursor-pointer`}
                   onClick={() => setIsActive(4)}
-                > 
+                >
                   App Desktop
                 </li>
-                
+
                 <li
                   className={`${
                     isActive === 5 && "bg-[#e76500] text-[#ffffff]"
                   } py-3.5 px-10 bg-[#252525] text-[#c6c6c6] text-[16px] font-bold tracking-[3%] rounded-md transition duration-300 cursor-pointer`}
                   onClick={() => setIsActive(5)}
-                > 
+                >
                   Branding
                 </li>
-                
               </ul>
+
+              <div className="mt-10">
+                {isActive === 1 && (
+                  <Container>
+                    <div>
+                      <Image src={portflio1}  alt="portfolio image"/>
+                    </div>
+                  </Container>
+                )}
+                {isActive === 2 && <p>Website Design Content</p>}
+                {isActive === 3 && <p>Mobile App Design Content</p>}
+                {isActive === 4 && <p>App Desktop Content</p>}
+                {isActive === 5 && <p>Branding Content</p>}
+              </div>
             </div>
           </div>
         </Container>
