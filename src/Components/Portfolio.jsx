@@ -195,8 +195,44 @@ const Portfolio = () => {
                   </div>
                  </Container>
                 )}
-                {isActive === 4 && <p>App Desktop Content</p>}
-                {isActive === 5 && <p>Branding Content</p>}
+                {isActive === 4 && (
+                   <Container>
+                   <div className="grid grid-cols-3 gap-[18px] items-center justify-between"> 
+                   
+                   {
+                       portfolio.map((item,i)=>(
+                         <div key={i} > 
+                         <Image className="rounded-[28px_28px_0_0] w-full h-auto" src={item.img}  alt="portfolio image"/>
+                         <div className="flex items-center justify-between p-4  bg-[#252525] rounded-[0_0_16px_16px] ">
+                         <p className="text-[#c6c6c6] text-[16px] font-bold tracking-[3%] ">{item.name}</p> 
+                         <p className="text-[#c6c6c6] text-[16px] font-bold tracking-[3%] ">{item.name}</p> 
+                         {/* <p className="text-[#959595] text-[16px] font-bold tracking-[3%] ">{item.category}</p>  */}
+                         </div>
+                       </div>
+                       ))
+                     }
+                  </div>
+                 </Container>
+                )}
+                {isActive === 5 && (
+                   <Container>
+                   <div className="grid grid-cols-3 gap-[18px] items-center justify-between"> 
+                   
+                   {
+                       portfolio.map((item,i)=>(
+                         <div key={i} > 
+                         <Image className="rounded-[28px_28px_0_0] w-full h-auto" src={item.img}  alt="portfolio image"/>
+                         <div className="flex items-center justify-between p-4  bg-[#252525] rounded-[0_0_16px_16px] ">
+                         <p className="text-[#c6c6c6] text-[16px] font-bold tracking-[3%] ">{item.name}</p> 
+                         <p className="text-[#c6c6c6] text-[16px] font-bold tracking-[3%] ">{item.name}</p> 
+                         {/* <p className="text-[#959595] text-[16px] font-bold tracking-[3%] ">{item.category}</p>  */}
+                         </div>
+                       </div>
+                       ))
+                     }
+                  </div>
+                 </Container>
+                )}
               </div>
             </div>
           </div>
