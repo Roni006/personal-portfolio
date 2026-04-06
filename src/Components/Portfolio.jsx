@@ -5,9 +5,77 @@ import { useState } from "react";
 
 // ! image importting
 import portflio1 from "../../src/img/portfolio/portfolio1.png";
+import portflio2 from "../../src/img/portfolio/portfolio2.png";
+import portflio3 from "../../src/img/portfolio/portfolio3.png";
 
 const Portfolio = () => {
   const [isActive, setIsActive] = useState(1);
+
+  const portfolio = [
+    
+    {
+      img: portflio1,
+      name:"Name Project" ,
+      Category: "Categories"
+
+    },
+
+    {
+      img: portflio2,
+      name:"Name Project" ,
+      Category: "Categories"
+
+    },
+
+    {
+      img: portflio3,
+      name:"Name Project" ,
+      Category: "Categories"
+
+    },
+
+    {
+      img: portflio2,
+      name:"Name Project" ,
+      Category: "Categories"
+
+    },
+
+    {
+      img: portflio1,
+      name:"Name Project" ,
+      Category: "Categories"
+
+    },
+
+    {
+      img: portflio3,
+      name:"Name Project" ,
+      Category: "Categories"
+
+    },
+
+    {
+      img: portflio1,
+      name:"Name Project" ,
+      Category: "Categories"
+
+    },
+
+    {
+      img: portflio3,
+      name:"Name Project" ,
+      Category: "Categories"
+
+    },
+
+    {
+      img: portflio2,
+      name:"Name Project" ,
+      category: "Categories"
+
+    },
+  ]
   return (
     <>
       <section className="pb-[150px] ">
@@ -69,12 +137,24 @@ const Portfolio = () => {
                 </li>
               </ul>
 
-              <div className="mt-10">
+              <div className="mt-10 min-h-[600px] transition-all duration-500 ease-in-out">
                 {isActive === 1 && (
                   <Container>
-                    <div>
-                      <Image src={portflio1}  alt="portfolio image"/>
-                    </div>
+                    <div className="grid grid-cols-3 gap-[18px] items-center justify-between"> 
+                    
+                    {
+                        portfolio.map((item,i)=>(
+                          <div key={i} > 
+                          <Image className="rounded-[28px_28px_0_0] w-full h-auto" src={item.img}  alt="portfolio image"/>
+                          <div className="flex items-center justify-between p-4  bg-[#252525] rounded-[0_0_16px_16px] ">
+                          <p className="text-[#c6c6c6] text-[16px] font-bold tracking-[3%] ">{item.name}</p> 
+                          <p className="text-[#c6c6c6] text-[16px] font-bold tracking-[3%] ">{item.name}</p> 
+                          {/* <p className="text-[#959595] text-[16px] font-bold tracking-[3%] ">{item.category}</p>  */}
+                          </div>
+                        </div>
+                        ))
+                      }
+                   </div>
                   </Container>
                 )}
                 {isActive === 2 && <p>Website Design Content</p>}
