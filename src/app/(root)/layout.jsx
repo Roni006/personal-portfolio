@@ -1,5 +1,6 @@
 
 
+import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
 
 export const metadata = {
@@ -11,6 +12,7 @@ const layout = ({ children }) => {
     <>
       <Navbar />
       {children}
+      <Footer />
     </>
   );
 };
