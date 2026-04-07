@@ -24,7 +24,7 @@ const Banner = () => {
               </div>
               <span className="intro">Hi, Iam</span>
               <h6 className="name pt-3">Anik Islam</h6>
-              <h1 className="font-bold tracking-[3%] bg-linear-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent text-[60px] pt-4 pb-4.5 ">
+              <h1 className="font-bold tracking-[3%] bg-linear-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent text-[55px] pt-4 pb-4.5 ">
                 Front End Developer
               </h1>
 

@@ -27,7 +27,7 @@ body {
 .name{
   color:var(--banner-intro);
   font-weight: bold;
-  font-size: 48px;
+  font-size: 40px;
   letter-spacing: 3%;
 }
  
