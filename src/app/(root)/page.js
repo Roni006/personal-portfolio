@@ -4,6 +4,7 @@ import Service from "@/Components/Service";
 import Progress from "@/Components/Progress";
 import React from "react";
 import Portfolio from "@/Components/Portfolio";
+import Contact from "@/Components/Contact";
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <AboutMe />
       {/* <Progress/> */}
       <Portfolio/>
+      <Contact/>
     </div>
   );
 };
