@@ -67,22 +67,27 @@ const Contact = () => {
 
                     <div className="flex justify-center items-start gap-7.5">
                       <input
-                        className="outline-none w-[490px]  inline-block text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7"
+                        className="outline-none w-122.5  inline-block text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7"
                         type="text"
                         placeholder="Timeline"
                       />
 
-                      <textarea
-                        className="outline-none resize-none w-[490px] text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7"
-                        rows={6}
-                        placeholder="Project Details...."
-                      ></textarea>
+                      <div className="flex flex-col items-end justify-center gap-5">
+                        <textarea
+                          className="outline-none resize-none w-122.5 text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7"
+                          rows={6}
+                          placeholder="Project Details...."
+                        ></textarea>
+                        <button type="submit" className="text-[20px] inline-block font-bold text-[#959595] cursor-pointer border border-[#959595] rounded-xl py-3 px-10 ">
+                          Send
+                        </button>
+                      </div>
                     </div>
 
                     <div className="flex items-end justify-end">
-                      <button className="text-[20px] font-bold text-[#959595] cursor-pointer border border-[#959595] rounded-[12px] py-3 px-10 ">
+                      {/* <button className="text-[20px] font-bold text-[#959595] cursor-pointer border border-[#959595] rounded-xl py-3 px-10 ">
                         Send
-                      </button>
+                      </button> */}
                     </div>
                   </div>
                 </form>
