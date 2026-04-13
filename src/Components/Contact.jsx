@@ -75,11 +75,14 @@ const Contact = () => {
                       </div>
                       <textarea
                         className=" outline-none resize-none w-[490px] text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7 "
-                        rows={10}
+                        rows={6}
                         cols={5}
                         placeholder="Project Details...."
-                      ></textarea>
+                      ></textarea>4 
                     </div>
+                      <div className="flex items-end justify-end">
+                      <button className="text-[20px] font-bold text-[#959595] cursor-pointer border border-[#959595] rounded-[12px] py-3 px-10 ">Send</button>
+                      </div>
                   </div>
                 </form>
               </div>
