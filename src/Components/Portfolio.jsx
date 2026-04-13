@@ -78,7 +78,7 @@ const Portfolio = () => {
   ]
   return (
     <>
-      <section className="pb-[150px] ">
+      <section className="pb-15">
         <Container>
           <div>
             {/* title  */}

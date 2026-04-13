@@ -4,7 +4,7 @@ import Container from "./Container";
 const Contact = () => {
   return (
     <>
-      <section className="py-28 mb-[200px]">
+      <section className="py-15 ">
         <Container>
           <div>
             <div>
@@ -27,12 +27,12 @@ const Contact = () => {
                     {/* email and name  */}
                     <div className="flex items-center justify-center gap-7.5">
                       <input
-                        className="outline-none w-[490px] text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7 "
+                        className="outline-none w-122.5 text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7 "
                         type="text"
                         placeholder="Name"
                       />
                       <input
-                        className="outline-none w-[490px]  text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7 "
+                        className="outline-none w-122.5  text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7 "
                         type="email"
                         placeholder="Email"
                       />
@@ -41,13 +41,13 @@ const Contact = () => {
                     {/* phone and seclect service  */}
                     <div className="flex items-center justify-center gap-7.5 py-7.5">
                       <input
-                        className=" outline-none w-[490px] text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7 "
+                        className=" outline-none w-122.5 text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7 "
                         type="text"
                         placeholder="Phone Number"
                       />
                       <div className="relative ">
                         <select
-                          className="appearance-none outline-none w-[490px] text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5  ps-8 pe-8 "
+                          className="appearance-none outline-none w-122.5 text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5  ps-8 pe-8 "
                           name=""
                           id=""
                         >
@@ -65,24 +65,25 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    <div className="flex justify-center gap-7.5">
-                      <div className="">
-                        <input
-                          className=" outline-none inline-block w-[490px] text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7 "
-                          type="text"
-                          placeholder="Timeline"
-                        />
-                      </div>
+                    <div className="flex justify-center items-start gap-7.5">
+                      <input
+                        className="outline-none w-[490px]  inline-block text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7"
+                        type="text"
+                        placeholder="Timeline"
+                      />
+
                       <textarea
-                        className=" outline-none resize-none w-[490px] text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7 "
+                        className="outline-none resize-none w-[490px] text-[16px] tracking-[3%] text-[#959595] bg-[#1b1b1b] py-3.5 px-7"
                         rows={6}
-                        cols={5}
                         placeholder="Project Details...."
-                      ></textarea>4 
+                      ></textarea>
                     </div>
-                      <div className="flex items-end justify-end">
-                      <button className="text-[20px] font-bold text-[#959595] cursor-pointer border border-[#959595] rounded-[12px] py-3 px-10 ">Send</button>
-                      </div>
+
+                    <div className="flex items-end justify-end">
+                      <button className="text-[20px] font-bold text-[#959595] cursor-pointer border border-[#959595] rounded-[12px] py-3 px-10 ">
+                        Send
+                      </button>
+                    </div>
                   </div>
                 </form>
               </div>
