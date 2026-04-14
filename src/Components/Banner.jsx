@@ -7,11 +7,10 @@ import { PiBehanceLogoLight } from "react-icons/pi";
 import { AiOutlineDribbble } from "react-icons/ai";
 import Image from "next/image";
 
-
 // !image import
-import bannerShape from '../../src/img/banner-img/banner-shape.png'; 
-import circle from '../../src/img/banner-img/circle.png'; 
-import hero from '../../src/img/banner-img/hero-img.png';
+import bannerShape from "../../src/img/banner-img/banner-shape.png";
+import circle from "../../src/img/banner-img/circle.png";
+import hero from "../../src/img/banner-img/hero-img.png";
 const Banner = () => {
   return (
     <>
@@ -20,7 +19,11 @@ const Banner = () => {
           <div className="flex items-center  justify-between gap-20">
             <div className="leftSide w-154.5 relative">
               <div>
-                <Image className="absolute left-0 top-5 -z-5" src={bannerShape} alt="Banner Shape" />
+                <Image
+                  className="absolute left-0 top-5 -z-5"
+                  src={bannerShape}
+                  alt="Banner Shape"
+                />
               </div>
               <span className="intro">Hi, Iam</span>
               <h6 className="name pt-3">Anik Islam</h6>
@@ -28,22 +31,23 @@ const Banner = () => {
                 Front End Developer
               </h1>
 
+              {/* icons  */}
               <div className="icons">
-                <div className="flex items-center gap-5">
-                  <span className=" w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
-                    <FaInstagram className="text-[20px] text-white " />
+                <div className="flex items-center gap-5 ">
+                  <span className="group w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
+                    <FaInstagram className="group-hover:text-[#fd6f00] text-[20px] text-white " />
                   </span>
 
-                  <span className=" w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
-                    <CiLinkedin className="text-[20px] text-white " />
+                  <span className="group w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
+                    <CiLinkedin className="group-hover:text-[#fd6f00] text-[20px] text-white " />
                   </span>
 
-                  <span className=" w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
-                    <AiOutlineDribbble className="text-[20px] text-white " />
+                  <span className="group w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
+                    <AiOutlineDribbble className="group-hover:text-[#fd6f00] text-[20px] text-white " />
                   </span>
 
-                  <span className=" w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
-                    <PiBehanceLogoLight className="text-[20px] text-white " />
+                  <span className="group w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
+                    <PiBehanceLogoLight className="group-hover:text-[#fd6f00] text-[20px] text-white " />
                   </span>
                 </div>
               </div>
@@ -87,11 +91,15 @@ const Banner = () => {
               </div>
             </div>
             <div className="rightSide w-133.75">
-                <div className="relative">
-                  <Image className="absolute top-65 bottom-0 -z-99 " src={circle} alt="cirlce shape Image" />
+              <div className="relative">
+                <Image
+                  className="absolute top-65 bottom-0 -z-99 "
+                  src={circle}
+                  alt="cirlce shape Image"
+                />
 
-                  <Image className="z-999 w-full" src={hero} alt="Hero Image" />
-                </div>
+                <Image className="z-999 w-full" src={hero} alt="Hero Image" />
+              </div>
             </div>
           </div>
         </Container>

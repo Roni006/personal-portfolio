@@ -5,6 +5,7 @@ import Progress from "@/Components/Progress";
 import React from "react";
 import Portfolio from "@/Components/Portfolio";
 import Contact from "@/Components/Contact";
+import Counter from "@/Components/Counter";
 
 const page = () => {
   return (
@@ -12,9 +13,10 @@ const page = () => {
       <Banner />
       <Service />
       <AboutMe />
-      {/* <Progress/> */}
+      <Progress/>
       <Portfolio/>
       <Contact/>
+      <Counter/>
     </div>
   );
 };

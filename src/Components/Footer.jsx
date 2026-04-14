@@ -2,14 +2,13 @@ import React from "react";
 import Container from "./Container";
 import Link from "next/link";
 
-// ! ICONS IMPORT 
+// ! ICONS IMPORT
 import { FaInstagram } from "react-icons/fa6";
 import { CiLinkedin } from "react-icons/ci";
 import { PiBehanceLogoLight } from "react-icons/pi";
 import { AiOutlineDribbble } from "react-icons/ai";
 import { FaRegEnvelope } from "react-icons/fa";
-import { FiPhone } from "react-icons/fi"; 
-
+import { FiPhone } from "react-icons/fi";
 
 const Footer = () => (
   <>
@@ -50,27 +49,28 @@ const Footer = () => (
           </div>
 
           {/* SOCIAL ICONS  */}
-          <div className="flex items-center gap-5">
-            <span className=" w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
-              <FaInstagram className="text-[20px] text-white " />
-            </span>
+          <div className="icons">
+            <div className="flex items-center gap-5 ">
+              <span className="group w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
+                <FaInstagram className="group-hover:text-[#fd6f00] text-[20px] text-white " />
+              </span>
 
-            <span className=" w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
-              <CiLinkedin className="text-[20px] text-white " />
-            </span>
+              <span className="group w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
+                <CiLinkedin className="group-hover:text-[#fd6f00] text-[20px] text-white " />
+              </span>
 
-            <span className=" w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
-              <AiOutlineDribbble className="text-[20px] text-white " />
-            </span>
+              <span className="group w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
+                <AiOutlineDribbble className="group-hover:text-[#fd6f00] text-[20px] text-white " />
+              </span>
 
-            <span className=" w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
-              <PiBehanceLogoLight className="text-[20px] text-white " />
-            </span>
+              <span className="group w-10 h-10 bg-[#7a7a7a7d] border border-[#ddd] rounded-full flex items-center justify-center cursor-pointer hover:bg-transparent hover:border-[#fd6f00] duration-300 ease-in-out ">
+                <PiBehanceLogoLight className="group-hover:text-[#fd6f00] text-[20px] text-white " />
+              </span>
+            </div>
           </div>
 
           {/* GET IN TOUCH */}
           <div className="flex items-center gap-5">
-
             {/* PHONE  */}
             <div className="flex items-center gap-2">
               <span>
@@ -89,13 +89,15 @@ const Footer = () => (
               <p className="text-[#959595] font-bold text-[20px] tracking-[3%] ">
                 <Link href="tel:+11234567890">+1 (123) 456-7890</Link>
               </p>
-            </div> 
+            </div>
           </div>
 
-           {/* COPY RIGHT  */}
-            <div className=" border-t-2 border-[#898585]  w-133.75 text-center mx-auto pt-4">
-                <p className="text-[16px] font-medium text-[#b2b0b0] tracking-[3%]">Designed by @AnikIslam Front End Developer</p>
-            </div>
+          {/* COPY RIGHT  */}
+          <div className=" border-t-2 border-[#898585]  w-133.75 text-center mx-auto pt-4">
+            <p className="text-[16px] font-medium text-[#b2b0b0] tracking-[3%]">
+              Designed by @AnikIslam Front End Developer
+            </p>
+          </div>
         </div>
       </Container>
     </section>
